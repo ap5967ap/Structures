@@ -20,11 +20,11 @@ void get_data_array(student data[], FILE *ptr, int n){ //function to get data fr
 void sort(student data[], int n){ //sort to sort array of structures
     for (int i = 0; i < n; i++)
     {
-        for (int j = i+1; j < n; j++)
+        for (int j = 0; j < n-i-1; j++)
         {
-            if (data[i].id > data[j].id){//Selection Sort
-                student temp=data[i]; //Swap if necessary
-                data[i]=data[j];
+            if (data[j].id > data[j+1].id){//Bubble Sort
+                student temp=data[j+1]; //Swap if necessary
+                data[j+1]=data[j];
                 data[j]=temp;
             }
         }   
