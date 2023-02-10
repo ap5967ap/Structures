@@ -3,8 +3,8 @@
 This assigment contains function to get familiar with getting data from file into array of structures, sorting the data and finally expoting data to new .txt file
 
 ## Required_files_to_download 
- 1. [input_file.txt](https://github.com/ap5967ap/Structures/blob/main/input_file.txt)
- 2. [Structure.txt](https://github.com/ap5967ap/Structures/blob/main/Structures.c)
+ 1. [input_file](https://github.com/ap5967ap/Structures/blob/main/input_file)
+ 2. [Structure.c](https://github.com/ap5967ap/Structures/blob/main/Structures.c)
 
  One can download the files by cloning the repository
 
@@ -24,3 +24,6 @@ This assigment contains function to get familiar with getting data from file int
   3. gcc Structure.c 
   4. ./a.out 
   5. To view ouput_file.txt -  cat ouput_file.txt
+
+### Author
+Aditya Priyadarshi (IMT2022075)
