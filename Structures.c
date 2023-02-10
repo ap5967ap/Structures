@@ -38,17 +38,17 @@ void output_file(student data[], int n, FILE *ptr){ //creates an output file "ou
 }
 int main(){
     int n; //stores size of array of structures
-    FILE *ptr=fopen("input_file.txt","r"); //File pointer to "input_file.txt"
+    FILE *ptr=fopen("input_file","r"); //File pointer to "input_file"
     if (ptr==NULL) //file can't be opened properly
         printf("Error: Could not open input file");
-    fscanf(ptr,"%d",&n);//input n from "input_file.txt" 
+    fscanf(ptr,"%d",&n);//input n from "input_file" 
     student *data=(student *)malloc(n*sizeof(student)); //creating an array of structures in heap (malloc-ed)
     get_data_array(data,ptr,n); //stores data in array of structures
     sort(data,n); //sorting array based on id
-    FILE *ptr2=fopen("output_file.txt","w+"); //pointer to "output_file.txt"
+    FILE *ptr2=fopen("output_file","w+"); //pointer to "output_file"
     if(ptr2==NULL)//file can't be opened properly
         printf("Error: Could not open output file");
-    output_file(data, n, ptr2);//printing output in "output_file.txt"
+    output_file(data, n, ptr2);//printing output in "output_file"
     
 return 0;
 }
