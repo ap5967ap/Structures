@@ -7,9 +7,18 @@ This assigment contains function to get familiar with getting data from file int
  2. [Structure.txt](https://github.com/ap5967ap/Structures/blob/main/Structures.c)
  One can download the files by cloning the repository
 
-### Explaining the functions of Structures.c 
+## Explaining the functions of Structures.c 
  1.get_data() takes a pointer to structure and File pointer to input_file.txt and reads value from input_file.txt and inputs in a Student struct instance
  2.get_data_array() add data to each element to array of structures. It is done by calling the get_data() function
  3.sort() function sort the given array of structures based on id of students in the array.
    The sorting meechanism used is "Bubble sort"
-   ##### "The method works by examining each set of adjacent elements in the array, from left to right, switching their positions if they are out of order."
+   ### "The method works by examining each set of adjacent elements in the array, from left to right, switching their positions if they are out of order."
+ 4. output_file() prints the structure in output_file.txt 
+    If file doesn't exist, then it is created automatically
+    
+## How to Run files
+  1. First install (or clone) files as mentioned above in same directory
+  2. Open terminal there
+  3. gcc Structure.c 
+  4. ./a.out 
+  5. To view ouput_file.txt -  cat ouput_file.txt
