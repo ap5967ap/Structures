@@ -45,7 +45,7 @@ int main(){
     student *data=(student *)malloc(n*sizeof(student)); //creating an array of structures in heap (malloc-ed)
     get_data_array(data,ptr,n); //stores data in array of structures
     sort(data,n); //sorting array based on id
-    FILE *ptr2=fopen("output_file","w+"); //pointer to "output_file.txt"
+    FILE *ptr2=fopen("output_file.txt","w+"); //pointer to "output_file.txt"
     if(ptr2==NULL)//file can't be opened properly
         printf("Error: Could not open output file");
     output_file(data, n, ptr2);//printing output in "output_file.txt"
