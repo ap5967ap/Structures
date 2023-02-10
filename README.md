@@ -12,4 +12,4 @@ This assigment contains function to get familiar with getting data from file int
  2.get_data_array() add data to each element to array of structures. It is done by calling the get_data() function
  3.sort() function sort the given array of structures based on id of students in the array.
    The sorting meechanism used is "Bubble sort"
-   ### "The method works by examining each set of adjacent elements in the array, from left to right, switching their positions if they are out of order."
+   ##### "The method works by examining each set of adjacent elements in the array, from left to right, switching their positions if they are out of order."
